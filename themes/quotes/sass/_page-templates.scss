@@ -4,6 +4,9 @@
 
 body {
     background-color: $background-color;
+    a, a:visited {
+        color: $green;
+    }
 }
 
 /* All Archives Page */

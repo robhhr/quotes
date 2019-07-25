@@ -16,13 +16,16 @@ textarea {
 /* Headings */
 
 h1, h2, h3, h4, h5, h6 {
+	color: $white;
 	clear: both;
 }
 
 /* Copy */
 
 p {
+	color: $white;
 	margin-bottom: $base__space-unit;
+	font-family: Exo;
 }
 
 dfn, cite, em, i {
