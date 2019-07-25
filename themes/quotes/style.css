@@ -236,7 +236,8 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   color: #FFFFFF;
   clear: both;
-  font-family: Exo; }
+  font-family: Exo;
+  font-weight: 500; }
 
 /* Copy */
 p {
@@ -438,6 +439,8 @@ textarea {
   .menu-the-menu-container .menu .menu-item a {
     padding-right: 15px;
     text-decoration: none;
+    border-right: none; }
+  .menu-the-menu-container .menu .menu-item:not(:last-child) {
     border-right: 1px solid #FFFFFF; }
 
 .article-about {
