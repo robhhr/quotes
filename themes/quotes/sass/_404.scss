@@ -1,0 +1,27 @@
+.error-404 {
+    padding: 0 15px;
+}
+
+.search-form {
+    fieldset {
+        border: none;
+        margin: 0;
+        padding: 0;
+        label {
+            .search-field {
+                background-color: transparent;
+                border: 2px solid $green;
+                padding: 5px 10px;
+                width: 245px;
+                font-family: Exo;
+                font-weight: 500;
+                color: $white;
+            }
+        }
+        
+    }
+}
+
+.icon-search {
+    padding-left: 10px;
+}

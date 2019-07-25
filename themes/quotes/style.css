@@ -421,6 +421,25 @@ textarea {
   background-size: 100%;
   background-repeat: no-repeat; }
 
+.error-404 {
+  padding: 0 15px; }
+
+.search-form fieldset {
+  border: none;
+  margin: 0;
+  padding: 0; }
+  .search-form fieldset label .search-field {
+    background-color: transparent;
+    border: 2px solid #00CC00;
+    padding: 5px 10px;
+    width: 245px;
+    font-family: Exo;
+    font-weight: 500;
+    color: #FFFFFF; }
+
+.icon-search {
+  padding-left: 10px; }
+
 .site-footer {
   margin-top: 100px; }
 
@@ -439,9 +458,9 @@ textarea {
   .menu-the-menu-container .menu .menu-item a {
     padding-right: 15px;
     text-decoration: none;
-    border-right: none; }
-  .menu-the-menu-container .menu .menu-item:not(:last-child) {
     border-right: 1px solid #FFFFFF; }
+    .menu-the-menu-container .menu .menu-item a:not(:last-child) {
+      border-right: none; }
 
 .article-about {
   padding-top: 20px; }

@@ -19,10 +19,10 @@
             a {
                 padding-right: 15px;
                 text-decoration: none;
-                border-right: none;
-            }
-            &:not(:last-child) {
                 border-right: 1px solid $white;
+                &:not(:last-child) {
+                    border-right: none;
+                }
             }
         }
     }
