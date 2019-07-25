@@ -219,9 +219,6 @@ th {
   padding: 0; }
 
 /*--------------------------------------------------------------
-# Embedded Fonts
---------------------------------------------------------------*/
-/*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
 body,
@@ -406,6 +403,17 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+.site-header {
+  height: 60px; }
+
+.logo {
+  background-image: url(../../images/qod-logo.svg);
+  margin: 50px 0 0 10px;
+  height: 100%;
+  width: 320px;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -572,24 +580,10 @@ a {
   margin: 0 0 1.5rem; }
 
 /*--------------------------------------------------------------
-# Media
---------------------------------------------------------------*/
-.page-content .wp-smiley,
-.entry-content .wp-smiley,
-.comment-content .wp-smiley {
-  border: none;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding: 0; }
-
-/* Make sure embeds and iframes fit their containers. */
-embed,
-iframe,
-object {
-  max-width: 100%; }
-
-/*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+body {
+  background-color: #222222; }
+
 /* All Archives Page */
 /* Submit a Quote Page */
