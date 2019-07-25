@@ -242,7 +242,8 @@ h1, h2, h3, h4, h5, h6 {
 p {
   color: #FFFFFF;
   margin-bottom: 1.5rem;
-  font-family: Exo; }
+  font-family: Exo;
+  font-weight: 300; }
 
 dfn, cite, em, i {
   font-style: italic; }
@@ -432,8 +433,12 @@ textarea {
   margin-left: 0;
   padding: 0;
   list-style: none; }
-  .menu-the-menu-container .menu .menu-item {
-    padding-right: 30px; }
+  .menu-the-menu-container .menu .menu-item:not(:first-child) {
+    padding: 0 15px; }
+  .menu-the-menu-container .menu .menu-item a {
+    padding-right: 15px;
+    text-decoration: none;
+    border-right: 1px solid #FFFFFF; }
 
 .article-about {
   padding-top: 20px; }
@@ -606,7 +611,9 @@ a {
 body {
   background-color: #222222; }
   body a, body a:visited {
-    color: #00CC00; }
+    color: #00CC00;
+    font-family: Exo;
+    font-weight: 300; }
 
 article {
   padding: 0 15px; }
