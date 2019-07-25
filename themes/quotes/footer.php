@@ -10,11 +10,14 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+			<div class="footer-content">
+
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
 				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://github.com/robhhr' ); ?>"><?php printf( esc_html( 'Brought to you by Roberto H' )); ?></a>
+					<p>Brought to you by <a href="<?php echo esc_url( 'https://github.com/robhhr' ); ?>"><?php printf( esc_html( 'Roberto H' )); ?></a></p>
 				</div><!-- .site-info -->
+			</div>
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 
