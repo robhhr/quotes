@@ -10,13 +10,11 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<button type"button" class="quote-request">Show Me Another!</button>
-
 		</div>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'home' ); ?>
+                <?php get_template_part( 'template-parts/content', 'archives' ); ?>
 
 			<?php endwhile; // End of the loop. ?>
 

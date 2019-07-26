@@ -421,6 +421,11 @@ textarea {
   background-size: 100%;
   background-repeat: no-repeat; }
 
+.archives-content a {
+  text-decoration: none;
+  padding-right: 35px;
+  line-height: 30px; }
+
 .error-404 {
   padding: 0 15px; }
 
