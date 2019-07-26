@@ -7,6 +7,7 @@ jQuery(".quote-request").on("click", function(event) {
         xhr.setRequestHeader("X-WP-Nonce", red_vars.wpapi_nonce);
       }
     }).done(function(response) {
-      console.log(response);
+    //   jQuery('.article-home').append(response[0].name);
+    console.log(response[0].id)
     });
   });

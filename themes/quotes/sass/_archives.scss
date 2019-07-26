@@ -1,4 +1,8 @@
-.archives-content-author, .archives-content-categories {
+.archives-content-author,
+.archives-content-categories,
+.archives-content-tags {
+    display: flex;
+    flex-wrap: wrap;
     a {
         text-decoration: none;
         padding-right: 30px;

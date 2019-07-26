@@ -10,10 +10,10 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header>
-
+    </header>
+    
+    <h2>Quote Authors</h2>
 	<div class="archives-content-author">
-        <h2>Quote Authors</h2>
         <?php
         $author_posts = new WP_Query( array(
             'post_type' => 'post',
@@ -28,22 +28,21 @@
         <?php wp_reset_postdata(); ?>
     </div>
 
+    <h2>Categories</h2>
     <div class="archives-content-categories">
-        <h2>Categories</h2>
             <?php $categories = get_categories();
                 foreach($categories as $category) {
-                echo '<a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a>';
+                echo '<div><a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></div>';
                 }?>
     </div>
 
+    <h2>Tags</h2>
     <div class="archives-content-tags">
-        <h2>Tags</h2>
         <?php
-        $tags = get_tags(array(
-            'hide_empty' => false
-            ));
-            foreach ($tags as $tag) {
-            echo '< href="' . $tag->name . '"/>';
-            }?>
+        $tags = get_tags();
+            foreach($tags as $tag) {
+                $tag_link = get_tag_link( $tag->term_id );
+	            $quote_tags .= "<div class='tags'><a href='{$tag_link}'>"."{$tag->name}</a>".'</div>';}
+                echo $quote_tags; ?>
     </div>
 </article>
