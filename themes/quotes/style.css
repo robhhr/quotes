@@ -421,9 +421,9 @@ textarea {
   background-size: 100%;
   background-repeat: no-repeat; }
 
-.archives-content a {
+.archives-content-author a, .archives-content-categories a {
   text-decoration: none;
-  padding-right: 35px;
+  padding-right: 30px;
   line-height: 30px; }
 
 .error-404 {
