@@ -458,6 +458,32 @@ button {
     padding-right: 30px;
     line-height: 30px; }
 
+.site-main-search {
+  padding: 0 15px; }
+
+.page-header-search {
+  border-bottom: 1px dotted #FFFFFF; }
+
+.article-search {
+  padding: 0; }
+
+.search-link {
+  text-decoration: none;
+  font-weight: 500; }
+
+.entry-summary-search p {
+  font-weight: 500; }
+
+.number-pagination {
+  padding-top: 25px; }
+
+.page-numbers {
+  padding-right: 10px;
+  text-decoration: none; }
+
+.page-numbers.current {
+  color: #FFFFFF; }
+
 .error-404 {
   padding: 0 15px; }
 
