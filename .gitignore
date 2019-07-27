@@ -26,7 +26,7 @@ ehthumbs.db
 !.gitignore
 !plugins/
 !themes/
-!updloads/
+!uploads/
 !README.md
 
 # Ignore everything in "plugins" except certain plugins. #

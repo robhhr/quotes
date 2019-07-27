@@ -8,14 +8,22 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area-home">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main-home" role="main">
 
-
-			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php get_template_part( 'template-parts/content', 'home' ); ?>
-
-			<?php endwhile; // End of the loop. ?>
+		<?php
+        $home_post = new WP_Query( array(
+			"orderby" => 'rand',
+            'posts_per_page' => 1,
+            ));
+            if ( $home_post->have_posts() ) : ?>
+                <?php while ( $home_post->have_posts() ) : $home_post->the_post(); ?>
+                <div class="ajax-content">
+					<p><?php the_content(); ?></p>
+					<p>- <?php the_title() ?></p>
+				</div>
+                <?php endwhile; ?>
+            <?php endif; ?>
+        <?php wp_reset_postdata(); ?>
 
 		</main><!-- #main -->
 		<button type="button" class="quote-request">Show Me Another!</button>

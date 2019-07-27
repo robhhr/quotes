@@ -42,7 +42,6 @@
         $tags = get_tags();
             foreach($tags as $tag) {
                 $tag_link = get_tag_link( $tag->term_id );
-	            $quote_tags .= "<div class='tags'><a href='{$tag_link}'>"."{$tag->name}</a>".'</div>';}
-                echo $quote_tags; ?>
+	            echo "<div class='tags'><a href='{$tag_link}'>"."{$tag->name}</a>".'</div>';} ?>
     </div>
 </article>
