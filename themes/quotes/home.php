@@ -7,12 +7,9 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area-home">
 		<main id="main" class="site-main" role="main">
 
-		<button type"button" class="quote-request">Show Me Another!</button>
-
-		</div>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -21,6 +18,9 @@ get_header(); ?>
 			<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
+		<button type="button" class="quote-request">Show Me Another!</button>
+		</div>
+
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>

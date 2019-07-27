@@ -421,6 +421,28 @@ textarea {
   background-size: 100%;
   background-repeat: no-repeat; }
 
+.ajax-content h2, .ajax-content p {
+  font-size: 20px;
+  font-weight: 300; }
+
+.article-home {
+  padding: 0; }
+
+button {
+  background-color: transparent;
+  font-size: 16px;
+  color: #00CC00;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 2px solid #00CC00;
+  padding: 10px 10px;
+  width: 200px;
+  font-family: Exo;
+  font-weight: 300; }
+  button:visited, button:active {
+    border: 2px solid #00CC00; }
+
 .archives-content-author,
 .archives-content-categories,
 .archives-content-tags {
@@ -653,6 +675,9 @@ body {
     font-weight: 300; }
 
 article {
+  padding: 0 15px; }
+
+.content-area-home {
   padding: 0 15px; }
 
 /* All Archives Page */

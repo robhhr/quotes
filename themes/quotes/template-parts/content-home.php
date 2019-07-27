@@ -7,7 +7,8 @@
 
 ?>
 
-<article class="article--home" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article class="article-home" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
 
 
 </article><!-- #post-## -->
