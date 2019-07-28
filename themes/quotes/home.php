@@ -25,10 +25,10 @@ get_header(); ?>
             <?php endif; ?>
         <?php wp_reset_postdata(); ?>
 
-		</main><!-- #main -->
+		</main>
 		<button type="button" class="quote-request">Show Me Another!</button>
 		</div>
 
-	</div><!-- #primary -->
+	</div>
 
 <?php get_footer(); ?>

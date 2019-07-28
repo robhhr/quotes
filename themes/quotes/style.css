@@ -517,7 +517,7 @@ button {
   padding: 0;
   list-style: none; }
   .menu-the-menu-container .menu .menu-item:not(:first-child) {
-    padding: 0 15px; }
+    padding: 0 0 0 15px; }
   .menu-the-menu-container .menu .menu-item a {
     padding-right: 15px;
     text-decoration: none;

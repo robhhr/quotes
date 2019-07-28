@@ -14,7 +14,7 @@
         list-style: none;
         .menu-item {
             &:not(:first-child) {
-                padding: 0 15px;
+                padding: 0 0 0 15px;
             }
             a {
                 padding-right: 15px;
