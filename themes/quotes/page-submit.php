@@ -9,13 +9,14 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+			<article>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-<?php the_content(); ?>
+			<h1>Submit a Quote</h1>
+			<?php the_content(); ?>
 	
 			<?php endwhile; ?>
-
+			</article>
 		</main>
 	</div>
 <?php get_footer(); ?>
