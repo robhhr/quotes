@@ -5,6 +5,18 @@
  * @package quotes-on-dev
  */
 
+function my_custom_login_logo() {
+	echo '<style type="text/css">                                                                   
+		.login h1 a { background-image:url('.get_stylesheet_directory_uri().'/images/qod-logo.svg) !important; background-position: center;background-color: black;
+		height: 80px !important; width: 100% !important; margin: 0 auto !important; background-size: 90% !important}                            
+	</style>';
+}
+add_action('login_head', 'my_custom_login_logo');
+function the_url( $url ) {
+    return get_bloginfo( 'url' );
+}
+add_filter( 'login_headerurl', 'the_url' );
+
 /**
  * Removes Comments from admin menu.
  */
