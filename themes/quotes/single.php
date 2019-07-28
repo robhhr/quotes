@@ -1,24 +1,34 @@
 <?php
 /**
- * The template for displaying all single posts.
+ * The template for displaying all pages.
  *
  * @package quotes-on-dev
  */
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<div id="primary" class="content-area-home">
+		<main id="main" class="site-main-home" role="main">
 
-		<?php while ( have_posts() ) : the_post(); ?>
+		<?php
+        $home_post = new WP_Query( array(
+			"orderby" => 'rand',
+            'posts_per_page' => 1,
+            ));
+            if ( $home_post->have_posts() ) : ?>
+                <?php while ( $home_post->have_posts() ) : $home_post->the_post(); ?>
+                <div class="ajax-content">
+					<p><?php the_content(); ?></p>
+					<p>- <?php the_title() ?></p>
+				</div>
+                <?php endwhile; ?>
+            <?php endif; ?>
+        <?php wp_reset_postdata(); ?>
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+		</main>
+		<button type="button" class="quote-request">Show Me Another!</button>
+		</div>
 
-			<?php the_post_navigation(); ?>
-
-		<?php endwhile; // End of the loop. ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	</div>
 
 <?php get_footer(); ?>
