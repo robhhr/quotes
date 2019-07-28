@@ -97,3 +97,5 @@ function red_scripts() {
    wp_enqueue_script( 'qod-starter-main', get_template_directory_uri() . '/build/js/main.min.js', array(), '20151215', true );
  }
  add_action( 'wp_enqueue_scripts', 'red_scripts' );
+
+

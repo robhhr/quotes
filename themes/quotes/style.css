@@ -442,6 +442,9 @@ input[type="submit"] {
   color: #00CC00;
   font-size: 14px; }
 
+a {
+  text-decoration: none; }
+
 .site-main-search {
   padding: 0 15px; }
 
