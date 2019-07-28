@@ -417,6 +417,12 @@ button {
     padding-right: 30px;
     line-height: 30px; }
 
+.category-content {
+  border-bottom: 1px dotted #FFFFFF; }
+  .category-content h2, .category-content p {
+    font-size: 20px;
+    font-weight: 300; }
+
 .wpcf7-form-control-wrap input[type="text"] {
   color: #FFFFFF;
   width: 225px;
