@@ -1,24 +1,34 @@
-.wpcf7-form-control-wrap {
-    input[type="text"] {
-        color: $white;
-        width: 225px;
-        border: 2px solid $green;
-    }
-    textarea {
-        width: 100%;
-        height: 100px;
-        border: 2px solid $green;
-        color: $white;
-        font-weight: 300;
-    }
+.quote-submit {
+    font-family: Exo;
+    font-weight: 300;
+    color: $white;
+    display: flex;
+    flex-direction: column;
 }
 
-.wpcf7-form-control {
-    background-color: transparent;
+label {
+    padding-top: 15px;
+    padding-bottom: 5px;
 }
 
-input[type="submit"] {
+input {
+    width: 225px;
+}
+
+#quote {
+    height: 100px;
+}
+
+input, #quote {
     background-color: transparent;
+    border: 2px solid $green;
+    color: $white;
+    // font-size: 14px;
+}
+
+#submit-quote {
+    background-color: transparent;
+    border-radius: 2px;
     border: 2px solid $green;
     padding: 8px 10px;
     width: 150px;
@@ -28,6 +38,6 @@ input[type="submit"] {
     font-size: 14px;
 }
 
-a {
-    text-decoration: none;
+.q-bottom {
+    padding-top: 25px;
 }

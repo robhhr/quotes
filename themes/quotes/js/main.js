@@ -1,9 +1,17 @@
 jQuery(() => {
 
+  let quoteSubmit = document.getElementsByClassName('quote-submit');
+  let quoteAuthor = document.getElementById('author');
+  let quote = document.getElementById('quote');
+  let quoteSource = document.getElementById('quote-source');
+  let quoteURL = document.getElementById('source-url');
+  let submitButton = document.getElementById('submit-quote');
+
   window.addEventListener('popstate', function() {
     window.location = window.location;
   });
-  
+
+// Ajax to get quotes on homepage
   jQuery('.quote-request').on('click', function(event) {
       event.preventDefault();
       jQuery.ajax({
@@ -23,20 +31,27 @@ jQuery(() => {
           });
       });
 
-      // jQuery('input[type="submit"]').on('click', function(event) {
-      //   event.preventDefault();
-      //   jQuery.ajax({
-      //     method: "post",
-      //     url: red_vars.rest_url + "wp/v2/posts/" + red_vars.post_id,
-      //     data: {
-      //       comment_status: "closed"
-      //     },
-      //     beforeSend: function(xhr) {
-      //       xhr.setRequestHeader("X-WP-Nonce", red_vars.wpapi_nonce);
-      //     }
-      //   }).done(function(response) {
-      //     alert("Success! Your quote has been submitted");
-      //     jQuery(response).appendTo('.quote-form')
-      //   });
-      // });
+// Ajax to post quotes
+  jQuery(quoteSubmit).on('submit', function(event) {
+      event.preventDefault();
+      jQuery.ajax({
+        method: "POST",
+        url: red_vars.rest_url + "wp/v2/posts/",
+        data: {
+          comment_status: "closed",
+          title: (jQuery(quoteAuthor).val()),
+          content: (jQuery(quote).val()),
+          _qod_quote_source: (jQuery(quoteURL).val()),
+          _qod_quote_source_url: (jQuery(quoteSource).val()),
+          status: 'pending',
+        },
+        beforeSend: function(xhr) {
+          xhr.setRequestHeader("X-WP-Nonce", red_vars.wpapi_nonce);
+        }
+      }).done(function() {
+        alert('Quote submitted successfully');
+      }).fail(function() {
+        alert('Quote not submitted');
+      }) 
   });
+});
