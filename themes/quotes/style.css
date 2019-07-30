@@ -371,6 +371,9 @@ textarea {
 
 .site-header {
   height: 60px; }
+  @media (min-width: 600px) {
+    .site-header {
+      height: 80px; } }
 
 .logo {
   background-image: url(../../images/qod-logo.svg);
@@ -379,6 +382,9 @@ textarea {
   width: 320px;
   background-size: 100%;
   background-repeat: no-repeat; }
+  @media (min-width: 600px) {
+    .logo {
+      width: 480px; } }
 
 .ajax-content h2, .ajax-content p {
   font-size: 20px;
@@ -441,6 +447,9 @@ label {
 
 input {
   width: 225px; }
+  @media (min-width: 600px) {
+    input {
+      width: 400px; } }
 
 #quote {
   height: 100px; }

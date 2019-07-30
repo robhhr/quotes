@@ -1,5 +1,8 @@
 .site-header {
     height: 60px;
+    @include tablet-mode {
+        height: 80px;
+    }
 }
 
 .logo {
@@ -8,5 +11,8 @@
     height: 100%;
     width: 320px;
     background-size: 100%;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    @include tablet-mode {
+        width: 480px;
+    }
 }

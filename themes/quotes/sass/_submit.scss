@@ -13,6 +13,9 @@ label {
 
 input {
     width: 225px;
+    @include tablet-mode {
+        width: 400px;
+    }
 }
 
 #quote {
