@@ -37,5 +37,13 @@
     h2, p {
         font-size: 20px;
         font-weight: 300;
+        @include desktop-mode {
+            font-size: 24px;
+        }
     }
+}
+
+.category-container, .tag-container {
+    width: 750px;
+    padding: 75px 30px 0 30px;
 }

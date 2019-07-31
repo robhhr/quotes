@@ -469,6 +469,13 @@ button {
   .arch-content h2, .arch-content p {
     font-size: 20px;
     font-weight: 300; }
+    @media (min-width: 1024px) {
+      .arch-content h2, .arch-content p {
+        font-size: 24px; } }
+
+.category-container, .tag-container {
+  width: 750px;
+  padding: 75px 30px 0 30px; }
 
 .quote-submit {
   font-family: Exo;
