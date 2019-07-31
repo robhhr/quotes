@@ -3,6 +3,11 @@
     @include tablet-mode {
         height: 80px;
     }
+    @include desktop-mode {
+        height: 135px;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .logo {
@@ -14,5 +19,8 @@
     background-repeat: no-repeat;
     @include tablet-mode {
         width: 480px;
+    }
+    @include desktop-mode {
+        width: 550px;
     }
 }

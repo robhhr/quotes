@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
 Theme Name: Quotes on Dev Starter Theme
 Theme URI: http://underscores.me/
@@ -374,6 +375,15 @@ textarea {
   @media (min-width: 600px) {
     .site-header {
       height: 80px; } }
+  @media (min-width: 1024px) {
+    .site-header {
+      height: 135px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
 
 .logo {
   background-image: url(../../images/qod-logo.svg);
@@ -385,10 +395,18 @@ textarea {
   @media (min-width: 600px) {
     .logo {
       width: 480px; } }
+  @media (min-width: 1024px) {
+    .logo {
+      width: 550px; } }
 
 .ajax-content h2, .ajax-content p {
   font-size: 20px;
   font-weight: 300; }
+
+@media (min-width: 1024px) {
+  .ajax-content {
+    width: 750px;
+    text-align: center; } }
 
 .article-home {
   padding: 0; }
@@ -548,15 +566,28 @@ input, #quote {
   list-style: none; }
   .menu-the-menu-container .menu .menu-item:not(:first-child) {
     padding: 0 0 0 15px; }
+  .menu-the-menu-container .menu .menu-item:not(:last-child) {
+    border-right: 1px solid #FFFFFF; }
+  @media (min-width: 600px) {
+    .menu-the-menu-container .menu .menu-item {
+      border-right: 1px solid #FFFFFF; } }
   .menu-the-menu-container .menu .menu-item a {
     padding-right: 15px;
-    text-decoration: none;
-    border-right: 1px solid #FFFFFF; }
-    .menu-the-menu-container .menu .menu-item a:not(:last-child) {
-      border-right: none; }
+    text-decoration: none; }
 
 .article-about {
   padding-top: 20px; }
+
+.about-container {
+  padding-top: 75px; }
+
+@media (min-width: 1024px) {
+  .entry-header {
+    padding: 0 30px; } }
+
+@media (min-width: 1024px) {
+  .entry-content {
+    padding: 0 30px; } }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -732,6 +763,26 @@ body {
 
 article {
   padding: 0 15px; }
+  @media (min-width: 1024px) {
+    article {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      article:before {
+        content: "“";
+        font-family: Exo;
+        color: #00CC00;
+        font-size: 380px;
+        height: 0; }
+      article:after {
+        content: "”";
+        font-family: Exo;
+        color: #00CC00;
+        font-size: 380px;
+        height: 0; } }
 
 .content-area-home {
   padding: 0 15px; }

@@ -3,6 +3,10 @@
         font-size: 20px;
         font-weight: 300;
     }
+    @include desktop-mode {
+        width: 750px;
+        text-align: center;
+    }
 }
 
 .article-home {

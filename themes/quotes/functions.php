@@ -104,6 +104,6 @@ function query_ppp($query) {
 	$query->set('posts_per_page', '10');
 	} if (is_category() || is_tag()) {
 	 $query->set('posts_per_page', '5');
-	};
-};
+	}
+}
 add_action( 'pre_get_posts', 'query_ppp' );

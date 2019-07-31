@@ -13,6 +13,24 @@ body {
 
 article {
     padding: 0 15px;
+    @include desktop-mode {
+        display: flex;
+        justify-content: center;
+        &:before {
+            content: "“";
+            font-family: Exo;
+            color: $green;
+            font-size: 380px;
+            height: 0;
+        }
+        &:after {
+            content: "”";
+            font-family: Exo;
+            color: $green;
+            font-size: 380px;
+            height: 0;
+        }
+    }
 }
 
 .content-area-home {
