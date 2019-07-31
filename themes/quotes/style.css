@@ -547,6 +547,10 @@ input, #quote {
 .page-numbers.current {
   color: #FFFFFF; }
 
+.search-container {
+  width: 750px;
+  padding: 75px 30px 0 30px; }
+
 .error-404 {
   padding: 0 15px; }
   @media (min-width: 1024px) {
