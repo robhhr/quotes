@@ -9,3 +9,15 @@
         line-height: 30px;
     }
 }
+
+.arch-header {
+    border-bottom: 1px dotted $white;
+}
+
+.arch-content {
+    border-bottom: 1px dotted $white;
+    h2, p {
+        font-size: 20px;
+        font-weight: 300;
+    }
+}

@@ -423,9 +423,12 @@ button {
     padding-right: 30px;
     line-height: 30px; }
 
-.category-content {
+.arch-header {
   border-bottom: 1px dotted #FFFFFF; }
-  .category-content h2, .category-content p {
+
+.arch-content {
+  border-bottom: 1px dotted #FFFFFF; }
+  .arch-content h2, .arch-content p {
     font-size: 20px;
     font-weight: 300; }
 
