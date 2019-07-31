@@ -434,12 +434,27 @@ button {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  @media (min-width: 1024px) {
+    .archives-content-author,
+    .archives-content-categories,
+    .archives-content-tags {
+      padding: 0 30px; } }
   .archives-content-author a,
   .archives-content-categories a,
   .archives-content-tags a {
     text-decoration: none;
     padding-right: 30px;
     line-height: 30px; }
+
+@media (min-width: 1024px) {
+  .archives-container {
+    padding-top: 75px; } }
+
+@media (min-width: 1024px) {
+  .categories-authors,
+  .categories-archive,
+  .tags-archives {
+    padding: 0 30px; } }
 
 .arch-header {
   border-bottom: 1px dotted #FFFFFF; }
@@ -552,6 +567,12 @@ input, #quote {
       -webkit-box-align: end;
           -ms-flex-align: end;
               align-items: flex-end; } }
+  @media (min-width: 1024px) {
+    .footer-content {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      padding: 0 50px; } }
 
 @media (min-width: 600px) {
   .credits {

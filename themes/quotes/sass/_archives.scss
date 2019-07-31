@@ -3,10 +3,27 @@
 .archives-content-tags {
     display: flex;
     flex-wrap: wrap;
+    @include desktop-mode {
+        padding: 0 30px;
+    }
     a {
         text-decoration: none;
         padding-right: 30px;
         line-height: 30px;
+    }
+}
+
+.archives-container {
+    @include desktop-mode {
+        padding-top: 75px;
+    }
+}
+
+.categories-authors,
+.categories-archive,
+.tags-archives {
+    @include desktop-mode {
+        padding: 0 30px;
     }
 }
 

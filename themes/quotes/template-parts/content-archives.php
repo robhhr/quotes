@@ -8,11 +8,12 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<div class="archives-container">
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
     </header>
     
-    <h2>Quote Authors</h2>
+    <h2 class="categories-authors">Quote Authors</h2>
 	<div class="archives-content-author">
         <?php
         $author_posts = new WP_Query( array(
@@ -28,7 +29,7 @@
         <?php wp_reset_postdata(); ?>
     </div>
 
-    <h2>Categories</h2>
+    <h2 class="categories-archive">Categories</h2>
     <div class="archives-content-categories">
             <?php $categories = get_categories();
                 foreach($categories as $category) {
@@ -36,7 +37,7 @@
                 }?>
     </div>
 
-    <h2>Tags</h2>
+    <h2 class="tags-archives">Tags</h2>
     <div class="archives-content-tags">
         <?php
         $tags = get_tags();
@@ -44,4 +45,5 @@
                 $tag_link = get_tag_link( $tag->term_id );
 	            echo "<div class='tags'><a href='{$tag_link}'>"."{$tag->name}</a>".'</div>';} ?>
     </div>
+</div>
 </article>
