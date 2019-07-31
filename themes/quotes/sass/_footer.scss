@@ -4,6 +4,16 @@
 
 .footer-content {
     padding: 0 15px;
+    @include tablet-mode {
+        display: flex;
+        align-items: flex-end;
+    }
+}
+
+.credits {
+    @include tablet-mode {
+        padding-left: 15px;
+    }
 }
 
 .menu-the-menu-container {
