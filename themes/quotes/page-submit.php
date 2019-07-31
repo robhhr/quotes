@@ -10,6 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<article>
+				<div class="submit-container">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 				<h1>Submit a Quote</h1>
@@ -22,7 +23,8 @@ get_header(); ?>
 					<a href="<?php wp_login_url() ?>">Click here to login</a>
 				<?php } ?>
 			<?php endwhile; ?>
-
+			
+				</div>
 			</article>
 		</main>
 	</div>

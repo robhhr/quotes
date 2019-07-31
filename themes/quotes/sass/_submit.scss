@@ -44,3 +44,10 @@ input, #quote {
 .q-bottom {
     padding-top: 25px;
 }
+
+.submit-container {
+    @include desktop-mode {
+        width: 750px;
+        padding: 75px 30px 0 30px;
+    }
+}
