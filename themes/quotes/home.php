@@ -9,26 +9,26 @@ get_header(); ?>
 
 	<div id="primary" class="content-area-home">
 		<main id="main" class="site-main-home" role="main">
-		<article>
-		<?php
-        $home_post = new WP_Query( array(
-			"orderby" => 'rand',
-            'posts_per_page' => 1,
-            ));
-            if ( $home_post->have_posts() ) : ?>
-                <?php while ( $home_post->have_posts() ) : $home_post->the_post(); ?>
-                <div class="ajax-content">
-					<p><?php the_content(); ?></p>
-					<p>- <?php the_title(); ?></p>
-				</div>
-                <?php endwhile; ?>
-            <?php endif; ?>
-        <?php wp_reset_postdata(); ?>
+		<article class="home-container">
+			<?php
+			$home_post = new WP_Query( array(
+				"orderby" => 'rand',
+				'posts_per_page' => 1,
+				));
+				if ( $home_post->have_posts() ) : ?>
+					<?php while ( $home_post->have_posts() ) : $home_post->the_post(); ?>
+					<div class="ajax-content">
+						<p><?php the_content(); ?></p>
+						<p>- <?php the_title(); ?></p>
+						<button type="button" class="quote-request">Show Me Another!</button>
+					</div>
+					<?php endwhile; ?>
+				<?php endif; ?>
+			<?php wp_reset_postdata(); ?>
 
-		</main>
-		<button type="button" class="quote-request">Show Me Another!</button>
+			<!-- <button type="button" class="quote-request">Show Me Another!</button> -->
 		</article>
-		</div>
+		</main>
 
 	</div>
 

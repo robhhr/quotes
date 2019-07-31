@@ -16,6 +16,7 @@
 .archives-container {
     @include desktop-mode {
         padding-top: 75px;
+        width: 750px;
     }
 }
 
