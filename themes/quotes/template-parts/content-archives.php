@@ -23,7 +23,7 @@
             ));
             if ( $author_posts->have_posts() ) : ?>
                 <?php while ( $author_posts->have_posts() ) : $author_posts->the_post(); ?>
-                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                <a href="<?php echo esc_url(get_permalink()); ?>"><?php the_title(); ?></a>
                 <?php endwhile; ?>
             <?php endif; ?>
         <?php wp_reset_postdata(); ?>

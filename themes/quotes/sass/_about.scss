@@ -3,9 +3,9 @@
 }
 
 .about-container {
-    padding-top: 75px;
     @include desktop-mode {
         width: 750px;
+        padding-top: 75px;
     }
 }
 

@@ -13,6 +13,7 @@ body {
 
 article {
     padding: 0 15px;
+    
     @include desktop-mode {
         display: flex;
         justify-content: center;
@@ -20,14 +21,14 @@ article {
             content: "“";
             font-family: Exo;
             color: $green;
-            font-size: 400px;
+            font-size: 25rem;
             height: 0;
         }
         &:after {
             content: "”";
             font-family: Exo;
             color: $green;
-            font-size: 400px;
+            font-size: 25rem;
             height: 0;
         }
     }

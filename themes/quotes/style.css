@@ -625,11 +625,10 @@ input, #quote {
 .article-about {
   padding-top: 20px; }
 
-.about-container {
-  padding-top: 75px; }
-  @media (min-width: 1024px) {
-    .about-container {
-      width: 750px; } }
+@media (min-width: 1024px) {
+  .about-container {
+    width: 750px;
+    padding-top: 75px; } }
 
 @media (min-width: 1024px) {
   .entry-header {
@@ -825,13 +824,13 @@ article {
         content: "“";
         font-family: Exo;
         color: #00CC00;
-        font-size: 400px;
+        font-size: 25rem;
         height: 0; }
       article:after {
         content: "”";
         font-family: Exo;
         color: #00CC00;
-        font-size: 400px;
+        font-size: 25rem;
         height: 0; } }
 
 .content-area-home {
