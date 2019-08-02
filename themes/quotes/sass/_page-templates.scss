@@ -12,22 +12,22 @@ body {
 }
 
 article {
-    padding: 0 15px;
     @include desktop-mode {
+        padding: 0 15px;
         display: flex;
         justify-content: center;
         &:before {
-            content: "“";
-            font-family: Exo;
+            content: "\f10d";
+            font-family: FontAwesome;
             color: $green;
-            font-size: 25rem;
+            font-size: 8rem;
             height: 0;
         }
         &:after {
-            content: "”";
-            font-family: Exo;
+            content: "\f10e";
+            font-family: FontAwesome;
             color: $green;
-            font-size: 25rem;
+            font-size: 8rem;
             height: 0;
         }
     }
