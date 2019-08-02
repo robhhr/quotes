@@ -1,3 +1,10 @@
+function submitForm() {
+  let formReset = document.getElementsByClassName('quote-submit')[0];
+  formReset.submit();
+  formReset.reset();
+  return false;
+}
+
 jQuery(() => {
 
   let quoteSubmit = document.getElementsByClassName('quote-submit');
@@ -50,6 +57,7 @@ jQuery(() => {
         }
       }).done(function() {
         alert('Quote submitted successfully');
+        submitForm();
       }).fail(function() {
         alert('Please try again');
       }) 
