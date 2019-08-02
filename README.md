@@ -1,5 +1,5 @@
-<div style="text-align: center; background-color: black; width: 280px">
-    <img src="themes/quotes/images/qod-logo.svg" width="100%" height="80px">
+<div style="text-align: center; width: 450px">
+    <img src="themes/quotes/images/readme-qod.png" width="100%" height="80px">
 </div>
 
 ## Quotes on Dev 💬
