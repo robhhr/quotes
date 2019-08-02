@@ -1,5 +1,5 @@
-<div style="text-align: center; width: 450px">
-    <img src="themes/quotes/images/readme-qod.png" width="100%" height="80px">
+<div style="text-align: center; width: 100%">
+    <img src="themes/quotes/images/readme-qod.png" height="80px">
 </div>
 
 ## Quotes on Dev 💬
