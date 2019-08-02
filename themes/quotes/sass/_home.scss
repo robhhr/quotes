@@ -3,7 +3,7 @@
         font-size: 20px;
         font-weight: 300;
         @include desktop-mode {
-            font-size: 36px;
+            font-size: 32px;
         }
     }
     @include desktop-mode {
@@ -20,6 +20,10 @@
 .ajax-link {
     font-size: 16px;
     font-style: italic;
+    @include desktop-mode {
+        font-size: 28px;
+        font-style: italic;
+    }
 }
 
 button {

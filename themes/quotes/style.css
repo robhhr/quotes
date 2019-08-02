@@ -403,7 +403,7 @@ textarea {
   font-weight: 300; }
   @media (min-width: 1024px) {
     .ajax-content h2, .ajax-content p {
-      font-size: 36px; } }
+      font-size: 32px; } }
 
 @media (min-width: 1024px) {
   .ajax-content {
@@ -417,6 +417,10 @@ textarea {
 .ajax-link {
   font-size: 16px;
   font-style: italic; }
+  @media (min-width: 1024px) {
+    .ajax-link {
+      font-size: 28px;
+      font-style: italic; } }
 
 button {
   background-color: transparent;

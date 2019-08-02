@@ -20,7 +20,7 @@ get_header(); ?>
 					</div>
 				<?php } else { ?>
 					<p>Sorry, you must be logged in to submit a quote!</p>
-					<a href="<?php wp_login_url() ?>">Click here to login</a>
+					<a href="<?php echo esc_url(admin_url()); ?>">Click here to login</a>
 				<?php } ?>
 			<?php endwhile; ?>
 			

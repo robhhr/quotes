@@ -33,7 +33,15 @@ jQuery(() => {
       }).done(function(response) {
         history.pushState('', '', response[0].link);
         for(let i = 0; i < 1; i++) {
-         jQuery('.site-main-home').empty().append(`<article class="home-container"><div class="ajax-content"><p>${response[0].content.rendered}</p><p> - ${response[0].title.rendered}<a href="${response[0]._qod_quote_source_url}"class="ajax-link">${response[0]._qod_quote_source}</a></p></div></article>`);
+         jQuery('.site-main-home').empty().append(
+           `<article class="home-container">
+              <div class="ajax-content">
+                <p>${response[0].content.rendered}</p>
+                <p> - ${response[0].title.rendered}${response[0]._qod_quote_source &&`, 
+                  <a href="${response[0]._qod_quote_source_url}"class="ajax-link">${response[0]._qod_quote_source}</a>
+                </p>`}
+              </div>
+            </article>`);
             }
           });
       });
