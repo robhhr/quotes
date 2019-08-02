@@ -1,10 +1,12 @@
-<div style="text-align: center">
-    <img src="themes/quotes/images/qod-logo.svg" width="300" height="auto">
+<div style="text-align: center; background-color: black; width: 280px">
+    <img src="themes/quotes/images/qod-logo.svg" width="100%" height="80px">
 </div>
 
-## Quotes on Dev
+## Quotes on Dev 💬
 
-A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
+WP-based theme that fetches a random quote on load and accepts quotes submissions. Built with HTML, WordPress, CSS, PHP, vanilla JS & jQuery.
+
+This project is a random quote generator that saves the quotes in the archives back-end and supports personal quotes submissions.
 
 ## Installation
 
@@ -14,7 +16,7 @@ Then add me to your `wp-content/themes` directory.
 
 ### 2. Rename the `quotesondev-starter-master` directory
 
-Make sure that the theme directory name is project appropriate! Do you need `starter` or `master` in the directory name?
+Make sure that the theme directory name is project appropriate!
 
 ### 3. Install the dev dependencies
 
@@ -25,3 +27,26 @@ Next you'll need to run `npm install` **inside your theme directory** to install
 Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
 
 And now would be a good time to `git init` :)
+---
+### Technologies Used
+
+* VS Code
+* Wordpress
+* HTML
+* SASS
+* PHP
+* JavaScript
+* Gulp
+* jQuery
+
+## Project Comps
+### Front Page
+<img src="themes/quotes/images/desktop-home.png" width="700" height="auto">
+
+### Submit a Quote
+<img src="themes/quotes/images/submit-desktop.png" width="700" height="auto">
+
+### Quotes Archives
+<img src="themes/quotes/images/desktop-archive.png" width="700" height="auto">
+
+This project was created with 💙 by <a href="https://github.com/robhhr">Roberto H.</a>
