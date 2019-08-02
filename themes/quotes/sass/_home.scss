@@ -1,3 +1,9 @@
+#ajax-author {
+    @include desktop-mode {
+        font-size: 24px;
+    }
+}
+
 .ajax-content {
     h2, p {
         font-size: 20px;
@@ -20,9 +26,11 @@
 .ajax-link {
     font-size: 16px;
     font-style: italic;
+    text-decoration: none;
     @include desktop-mode {
-        font-size: 28px;
+        font-size: 24px;
         font-style: italic;
+        text-decoration: none;
     }
 }
 

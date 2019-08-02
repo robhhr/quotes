@@ -19,7 +19,7 @@ get_header(); ?>
 					<?php while ( $home_post->have_posts() ) : $home_post->the_post(); ?>
 					<div class="ajax-content">
 						<p><?php the_content(); ?></p>
-						<p>- <?php the_title(); ?></p>
+						<p id="ajax-author">- <?php the_title(); ?></p>
 						<!-- <button type="button" class="quote-request">Show Me Another!</button> -->
 					</div>
 					<?php endwhile; ?>

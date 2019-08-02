@@ -15,11 +15,12 @@ get_header(); ?>
                 <?php while (have_posts() ) : the_post(); ?>
                 <div class="ajax-content">
 					<p><?php the_content(); ?></p>
-					<p>- <?php the_title() ?></p>
+					<p id="ajax-author">- <?php the_title() ?></p>
 					<!-- <button type="button" class="quote-request">Show Me Another!</button> -->
 				</div>
                 <?php endwhile; ?>
-            <?php endif; ?>
+			<?php endif; ?>
+			<?php wp_reset_postdata(); ?>
 
 </article>
 		</main>

@@ -37,7 +37,7 @@ jQuery(() => {
            `<article class="home-container">
               <div class="ajax-content">
                 <p>${response[0].content.rendered}</p>
-                <p> - ${response[0].title.rendered}${response[0]._qod_quote_source &&`, 
+                <p id="ajax-author"> - ${response[0].title.rendered}${response[0]._qod_quote_source &&`, 
                   <a href="${response[0]._qod_quote_source_url}"class="ajax-link">${response[0]._qod_quote_source}</a>
                 </p>`}
               </div>

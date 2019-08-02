@@ -398,6 +398,10 @@ textarea {
     .logo {
       width: 700px; } }
 
+@media (min-width: 1024px) {
+  #ajax-author {
+    font-size: 24px; } }
+
 .ajax-content h2, .ajax-content p {
   font-size: 20px;
   font-weight: 300; }
@@ -416,11 +420,13 @@ textarea {
 
 .ajax-link {
   font-size: 16px;
-  font-style: italic; }
+  font-style: italic;
+  text-decoration: none; }
   @media (min-width: 1024px) {
     .ajax-link {
-      font-size: 28px;
-      font-style: italic; } }
+      font-size: 24px;
+      font-style: italic;
+      text-decoration: none; } }
 
 button {
   background-color: transparent;
