@@ -20,15 +20,16 @@ get_header(); ?>
 					<div class="ajax-content">
 						<p><?php the_content(); ?></p>
 						<p>- <?php the_title(); ?></p>
-						<button type="button" class="quote-request">Show Me Another!</button>
+						<!-- <button type="button" class="quote-request">Show Me Another!</button> -->
 					</div>
 					<?php endwhile; ?>
 				<?php endif; ?>
 			<?php wp_reset_postdata(); ?>
 
-			<!-- <button type="button" class="quote-request">Show Me Another!</button> -->
 		</article>
+
 		</main>
+		<button type="button" class="quote-request">Show Me Another!</button>
 
 	</div>
 
