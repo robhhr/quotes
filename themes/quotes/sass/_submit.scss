@@ -20,13 +20,15 @@ input {
 
 #quote {
     height: 100px;
+    @include tablet-mode {
+        max-width: 700px;
+    }
 }
 
 input, #quote {
     background-color: transparent;
     border: 2px solid $green;
     color: $white;
-    // font-size: 14px;
 }
 
 #submit-quote {
