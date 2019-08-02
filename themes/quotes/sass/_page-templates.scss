@@ -13,7 +13,7 @@ body {
 
 article {
     @include desktop-mode {
-        padding: 0 15px;
+        padding-top: 75px;
         display: flex;
         justify-content: center;
         &:before {
@@ -35,6 +35,10 @@ article {
 
 .content-area-home {
     padding: 0 15px;
+    @include desktop-mode {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /* All Archives Page */

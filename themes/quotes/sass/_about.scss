@@ -1,11 +1,14 @@
 .article-about {
-    padding: 20px 15px 0 15px;
+    padding: 0 15px;
+    @include desktop-mode {
+        padding-top: 75px;
+    }
 }
 
 .about-container {
     @include desktop-mode {
         width: 750px;
-        padding-top: 75px;
+        padding: 0 15px;
     }
 }
 

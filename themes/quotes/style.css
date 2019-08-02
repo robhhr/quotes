@@ -409,7 +409,7 @@ textarea {
   .ajax-content {
     width: 750px;
     text-align: left;
-    padding: 75px 30px 0 30px; } }
+    padding: 0 30px; } }
 
 .article-home {
   padding: 0; }
@@ -423,6 +423,7 @@ button {
   font-size: 16px;
   color: #00CC00;
   text-shadow: none;
+  border-radius: 3px;
   -webkit-box-shadow: none;
           box-shadow: none;
   border: 2px solid #00CC00;
@@ -432,6 +433,9 @@ button {
   font-weight: 300; }
   button:visited, button:active {
     border: 2px solid #00CC00; }
+  @media (min-width: 1024px) {
+    button {
+      margin: 0 auto; } }
 
 .archives-content-author,
 .archives-content-categories,
@@ -457,7 +461,6 @@ button {
   padding: 0 15px; }
   @media (min-width: 1024px) {
     .archives-container {
-      padding-top: 75px;
       width: 750px; } }
 
 @media (min-width: 1024px) {
@@ -483,7 +486,7 @@ button {
   @media (min-width: 1024px) {
     .category-container, .tag-container {
       width: 750px;
-      padding: 75px 30px 0 30px; } }
+      padding: 0 35px; } }
 
 .quote-submit {
   font-family: Exo;
@@ -537,7 +540,7 @@ input, #quote {
   @media (min-width: 1024px) {
     .submit-container {
       width: 750px;
-      padding: 75px 30px 0 30px; } }
+      padding: 0 30px; } }
 
 .site-main-search {
   padding: 0 15px; }
@@ -568,14 +571,14 @@ input, #quote {
 @media (min-width: 1024px) {
   .search-container {
     width: 750px;
-    padding: 75px 30px 0 30px; } }
+    padding: 0 30px; } }
 
 .error-404 {
   padding: 0 15px; }
   @media (min-width: 1024px) {
     .error-404 {
       width: 750px;
-      padding-top: 75px; } }
+      padding: 0 35px; } }
 
 .search-form fieldset {
   border: none;
@@ -636,12 +639,15 @@ input, #quote {
     text-decoration: none; }
 
 .article-about {
-  padding: 20px 15px 0 15px; }
+  padding: 0 15px; }
+  @media (min-width: 1024px) {
+    .article-about {
+      padding-top: 75px; } }
 
 @media (min-width: 1024px) {
   .about-container {
     width: 750px;
-    padding-top: 75px; } }
+    padding: 0 15px; } }
 
 @media (min-width: 1024px) {
   .entry-header {
@@ -825,7 +831,7 @@ body {
 
 @media (min-width: 1024px) {
   article {
-    padding: 0 15px;
+    padding-top: 75px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -847,6 +853,15 @@ body {
 
 .content-area-home {
   padding: 0 15px; }
+  @media (min-width: 1024px) {
+    .content-area-home {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 /* All Archives Page */
 /* Submit a Quote Page */
