@@ -1,6 +1,6 @@
-<div style="margin: 0 auto; width: 100%">
+<p align="center">
     <img src="themes/quotes/images/readme-qod.png" height="80px">
-</div>
+</p>
 
 ## Quotes on Dev 💬
 
