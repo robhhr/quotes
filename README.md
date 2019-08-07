@@ -4,7 +4,7 @@
 
 ## Quotes on Dev 💬
 
-WP-based theme that fetches a random quote on load and accepts quotes submissions. Built with HTML, WordPress, CSS, PHP, vanilla JS & jQuery.
+WP-based theme that fetches a random quote on load and accepts quotes submissions. Built with HTML, WordPress, CSS (SASS), PHP, vanilla JS & jQuery.
 
 This project is a random quote generator that saves the quotes in the archives back-end and supports personal quotes submissions.
 
@@ -26,7 +26,8 @@ Next you'll need to run `npm install` **inside your theme directory** to install
 
 Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
 
-And now would be a good time to `git init` :)
+### 5. Run it to see it live!
+
 ---
 ### Technologies Used
 
