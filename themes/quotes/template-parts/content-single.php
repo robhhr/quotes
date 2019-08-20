@@ -14,9 +14,9 @@
 		<?php endif; ?>
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
+	</header>
 
 	<div class="entry-content">
 		<?php the_content(); ?>
-	</div><!-- .entry-content -->
-</article><!-- #post-## -->
+	</div>
+</article>

@@ -16,7 +16,6 @@ get_header(); ?>
                 <div class="ajax-content">
 					<p><?php the_content(); ?></p>
 					<p id="ajax-author">- <?php the_title() ?></p>
-					<!-- <button type="button" class="quote-request">Show Me Another!</button> -->
 				</div>
                 <?php endwhile; ?>
 			<?php endif; ?>

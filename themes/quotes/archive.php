@@ -16,9 +16,9 @@ get_header(); ?>
 				<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 				?>
-			</header><!-- .page-header -->
+			</header>
 
-			<?php /* Start the Loop */ ?>
+			<?php ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
@@ -35,7 +35,7 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+		</main>
+	</div>
 
 <?php get_footer(); ?>
