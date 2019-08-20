@@ -19,9 +19,9 @@ jQuery(() => {
   });
 
 // Ajax to get quotes on homepage
-  jQuery('.quote-request').on('click', function(event) {
+  $('.quote-request').on('click', function(event) {
       event.preventDefault();
-      jQuery.ajax({
+      $.ajax({
         method: 'GET',
         url: red_vars.rest_url + 'wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1',
         data: {
@@ -33,7 +33,7 @@ jQuery(() => {
       }).done(function(response) {
         history.pushState('', '', response[0].link);
         for(let i = 0; i < 1; i++) {
-         jQuery('.site-main-home').empty().append(
+         $('.site-main-home').empty().append(
            `<article class="home-container">
               <div class="ajax-content">
                 <p>${response[0].content.rendered}</p>
@@ -47,17 +47,17 @@ jQuery(() => {
       });
 
 // Ajax to post quotes
-  jQuery(quoteSubmit).on('submit', function(event) {
+  $(quoteSubmit).on('submit', function(event) {
       event.preventDefault();
-      jQuery.ajax({
+      $.ajax({
         method: "POST",
         url: red_vars.rest_url + "wp/v2/posts/",
         data: {
           comment_status: "closed",
-          title: (jQuery(quoteAuthor).val()),
-          content: (jQuery(quote).val()),
-          _qod_quote_source: (jQuery(quoteURL).val()),
-          _qod_quote_source_url: (jQuery(quoteSource).val()),
+          title: ($(quoteAuthor).val()),
+          content: ($(quote).val()),
+          _qod_quote_source: ($(quoteURL).val()),
+          _qod_quote_source_url: ($(quoteSource).val()),
           status: 'pending',
         },
         beforeSend: function(xhr) {
